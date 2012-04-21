@@ -14,7 +14,7 @@ TMP=$(CURDIR)/debian/$(PACKAGE)
 
 override_dh_auto_install:
 	dh_auto_install
-	mkdir $(TMP)/var/lib/gerrit
+	mkdir -p $(TMP)/var/lib/gerrit
 	install -D -o root -g root -m 0755 src/gerrit.war $(TMP)/usr/share/gerrit/gerrit.war
 
 %:
