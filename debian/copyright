@@ -1,0 +1,13 @@
+This package was Debianised by Marin Atanasov Nikolov <mra@melexis.com> on Wed Apr 18 10:55:30 EEST 2012
+
+This package was downloaded from http://code.google.com/p/gerrit/
+
+Upstream Author: ... 
+
+Copyright ...
+
+License: Apache License 2.0
+
+The packaging is Copyright 2012 Marin Atanasov Nikolov <mra@melexis.com> and is licenced
+under the terms of the BSD licence. On Debian systems the BSD licence can be
+found in /usr/share/common-licenses/BSD.
