@@ -20,6 +20,17 @@ set -e
 
 case "$1" in
     configure)
+        # If the package has default file it could be sourced, so that
+        # the local admin can overwrite the defaults
+     
+        [ -f "/etc/default/gerrit" ] && . /etc/default/gerrit
+     
+        # Sane defaults:
+     
+        [ -z "$USER_NAME" ] && USER_NAME=gerrit
+        [ -z "$USER_GROUP" ] && USER_GROUP=gerrit
+
+	chown -R ${USER_NAME}:${USER_GROUP} /var/lib/gerrit
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
