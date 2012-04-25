@@ -27,10 +27,10 @@ case "$1" in
      
         # Sane defaults:
      
-        [ -z "$USER_NAME" ] && USER_NAME=gerrit
-        [ -z "$USER_GROUP" ] && USER_GROUP=gerrit
+        [ -z "$GERRIT_USER" ] && GERRIT_USER=gerrit
+        [ -z "$GERRIT_GROUP" ] && GERRIT_GROUP=gerrit
 
-	chown -R ${USER_NAME}:${USER_GROUP} /var/lib/gerrit
+	chown -R ${GERRIT_USER}:${GERRIT_GROUP} /var/lib/gerrit
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
