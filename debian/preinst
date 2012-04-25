@@ -49,6 +49,7 @@ case "$1" in
 			--ingroup $GERRIT_GROUP \
 			--no-create-home \
 			--disabled-password \
+		    	--shell /bin/false \
 			$GERRIT_USER 2>/dev/null || true
 		echo "..done"
 	fi

@@ -25,4 +25,4 @@ GERRIT_FULLNAME="Gerrit Daemon User"
 # Location to the Gerrit war file
 GERRIT_WAR=/usr/share/gerrit/gerrit.war
 GERRIT_ARGS=""
-GERRIT_SH=${GERRIT_DATADIR}/bin/gerrit.sh
+GERRIT_SH=${GERRIT_SITE}/bin/gerrit.sh
