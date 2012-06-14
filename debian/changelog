@@ -1,3 +1,9 @@
+gerrit (2.4.1) unstable; urgency=low
+
+  * Update Gerrit to version 2.4.1 
+
+ -- Marin Atanasov Nikolov <mra@melexis.com>  Thu, 14 Jun 2012 14:17:47 +0300
+
 gerrit (2.3) unstable; urgency=low
 
   * Initial release.
