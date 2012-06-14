@@ -1,3 +1,9 @@
+gerrit (2.4.1-2) unstable; urgency=low
+
+  * Bump package revision
+
+ -- Marin Atanasov Nikolov <mra@melexis.com>  Thu, 14 Jun 2012 17:37:00 +0300
+
 gerrit (2.4.1-1) unstable; urgency=low
 
   * Bump package version after postinst update
