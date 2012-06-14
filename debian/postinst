@@ -30,7 +30,6 @@ case "$1" in
         [ -z "$GERRIT_USER" ] && GERRIT_USER=gerrit
         [ -z "$GERRIT_GROUP" ] && GERRIT_GROUP=gerrit
 
-	chown -R ${GERRIT_USER}:${GERRIT_GROUP} /var/lib/gerrit
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
