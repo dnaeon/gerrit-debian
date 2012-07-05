@@ -1,3 +1,9 @@
+gerrit (2.4.2) unstable; urgency=low
+
+  * Update package to version 2.4.2 of Gerrit
+
+ -- Marin Atanasov Nikolov <dnaeon@gmail.com>  Thu, 05 Jul 2012 11:17:59 +0300
+
 gerrit (2.4.1-3) unstable; urgency=low
 
   * Bump package version after adding git as a dependency
