@@ -1,3 +1,10 @@
+gerrit (2.4.2-1) unstable; urgency=low
+
+  * switch deps to openjdk, since that's the best supported on Debian
+  * signing package after reviewing code
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Mon, 03 Sep 2012 14:01:19 -0400
+
 gerrit (2.4.2) unstable; urgency=low
 
   * Update package to version 2.4.2 of Gerrit
