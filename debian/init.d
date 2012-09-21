@@ -8,7 +8,7 @@
 # Description:       Web based code review and project management for Git based projects
 ### END INIT INFO
 
-# Author: Marin Atanasov Nikolov <mra@melexis.com>
+# Author: Marin Atanasov Nikolov <dnaeon@gmail.com>
 
 # PATH should only include /usr/* if it runs after the mountnfs.sh script
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
