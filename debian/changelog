@@ -1,3 +1,9 @@
+gerrit (2.5.1) unstable; urgency=low
+
+  * Update Gerrit to version 2.5.1
+
+ -- Marin Atanasov Nikolov <dnaeon@gmail.com>  Mon, 31 Dec 2012 13:49:17 +0200
+
 gerrit (2.4.2-1) unstable; urgency=low
 
   * switch deps to openjdk, since that's the best supported on Debian
