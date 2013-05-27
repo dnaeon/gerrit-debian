@@ -1,3 +1,9 @@
+gerrit (2.5.4) unstable; urgency=low
+
+  * Update Gerrit to version 2.5.4
+
+ -- Dominique Feyer <dfeyer@ttree.ch>  Mon, 27 May 2013 15:36:17 +0200
+
 gerrit (2.5.1) unstable; urgency=low
 
   * Update Gerrit to version 2.5.1
