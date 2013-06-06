@@ -3,14 +3,14 @@ Section: contrib/misc
 Priority: optional
 Maintainer: Marin Atanasov Nikolov <dnaeon@gmail.com>
 Build-Depends: debhelper (>> 7)
-Build-Depends-Indep: openjdk-6-jdk
+Build-Depends-Indep: java6-runtime-headless
 Standards-Version: 3.8.3
 Homepage: http://code.google.com/p/gerrit/
 
 Package: gerrit
 Architecture: all
 Pre-Depends: adduser
-Depends: ${misc:Depends}, openjdk-6-jre, git-core
+Depends: ${misc:Depends}, java6-runtime-headless, git-core
 Description: Web based code review and project management for Git based projects
  Gerrit is a web based code review system, facilitating online
  code reviews for projects using the Git version control system.
