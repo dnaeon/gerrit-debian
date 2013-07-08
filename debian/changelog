@@ -1,3 +1,9 @@
+gerrit (2.5.6) unstable; urgency=low
+
+  * Update Gerrit to version 2.5.6
+
+ -- TEUBEL György <tgyurci@freemail.hu>  Mon, 08 Jun 2013 10:41:17 +0200
+
 gerrit (2.5.4) unstable; urgency=low
 
   * Update Gerrit to version 2.5.4
