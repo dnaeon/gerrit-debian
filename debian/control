@@ -2,7 +2,6 @@ Source: gerrit
 Section: contrib/misc
 Priority: optional
 Maintainer: Marin Atanasov Nikolov <dnaeon@gmail.com>
-Changed-By: Markus Rekkenbeil <markus@bionix-it.de>
 Build-Depends: debhelper (>> 7)
 Build-Depends-Indep: java6-runtime-headless
 Standards-Version: 3.8.3
