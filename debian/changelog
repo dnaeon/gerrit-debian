@@ -1,3 +1,9 @@
+gerrit (2.9.1) unstable; urgency=low
+
+  * Update Gerrit to version 2.9.1
+
+ -- Luc Sarzyniec <contact@olbat.net>  Wed, 01 Oct 2014 08:54:06 +0200
+
 gerrit (2.8.1) unstable; urgency=low
 
   * Update Gerrit to version 2.8.1
