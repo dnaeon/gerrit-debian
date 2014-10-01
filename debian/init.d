@@ -33,7 +33,7 @@ SU=/bin/su
 
 #
 # Function that initializes Gerrit
-# 
+#
 gerrit_initialize()
 {
     /bin/echo -e "\nNo Gerrit site found. Will Initialize Gerrit first..."
@@ -53,12 +53,12 @@ do_start()
 	#   0 if daemon has been started
 	#   1 if daemon was already running
 	#   2 if daemon could not be started
-    
+
     if get_daemon_status; then return 1; fi
-    
+
 	# Initialize Gerrit if it is not yet initialized
     [ ! -d "${GERRIT_SITE}" ] && gerrit_initialize
-    
+
     ${GERRIT_SH} start > /dev/null 2>&1
 
     return $?
@@ -67,13 +67,13 @@ do_start()
 #
 # Verify that all Gerrit processes have been shutdown
 # and if not, then do killall for them
-# 
-get_running() 
+#
+get_running()
 {
     return `ps -U $GERRIT_USER --no-headers -f | egrep -e '(java|daemon)' | grep -c . `
 }
 
-force_stop() 
+force_stop()
 {
     get_running
     if [ $? -ne 0 ]; then
@@ -120,7 +120,7 @@ do_stop()
 	    force_stop || return 3
 	    ;;
     esac
-    
+
 	# Many daemons don't delete their pidfiles when they exit.
     rm -f $PIDFILE
     return 0
