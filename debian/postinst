@@ -22,11 +22,11 @@ case "$1" in
     configure)
         # If the package has default file it could be sourced, so that
         # the local admin can overwrite the defaults
-     
+
         [ -f "/etc/default/gerrit" ] && . /etc/default/gerrit
-     
+
         # Sane defaults:
-     
+
         [ -z "$GERRIT_USER" ] && GERRIT_USER=gerrit
         [ -z "$GERRIT_GROUP" ] && GERRIT_GROUP=gerrit
 

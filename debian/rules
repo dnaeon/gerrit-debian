@@ -18,4 +18,4 @@ override_dh_auto_install:
 	install -D -o root -g root -m 0755 src/gerrit.war $(TMP)/usr/share/gerrit/gerrit.war
 
 %:
-	dh $@ 
+	dh $@
