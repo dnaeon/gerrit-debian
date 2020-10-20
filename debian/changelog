@@ -1,6 +1,7 @@
 gerrit (3.2.3) UNRELEASED; urgency=medium
 
   * Update Gerrit to version 3.2.3
+  * use "3.0 (native)" package format
   * Rise dependency on java11
 
  -- Nicolas Bourdaud <nicolas.bourdaud@gmail.com>  Tue, 20 Oct 2020 21:27:34 +0200
