@@ -9,13 +9,5 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-PACKAGE=$(shell dh_listpackages)
-TMP=$(CURDIR)/debian/$(PACKAGE)
-
-override_dh_auto_install:
-	dh_auto_install
-	mkdir -p $(TMP)/var/lib/gerrit
-	install -D -o root -g root -m 0755 src/gerrit.war $(TMP)/usr/share/gerrit/gerrit.war
-
 %:
 	dh $@
