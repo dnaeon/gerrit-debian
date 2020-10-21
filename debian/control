@@ -5,7 +5,7 @@ Maintainer: Marin Atanasov Nikolov <dnaeon@gmail.com>
 Build-Depends: debhelper (>= 12)
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://code.google.com/p/gerrit/
+Homepage: https://www.gerritcodereview.com/
 
 Package: gerrit
 Architecture: all
