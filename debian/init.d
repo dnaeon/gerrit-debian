@@ -16,6 +16,8 @@ PATH=/sbin:/usr/sbin:/bin:/usr/bin
 DESC="Gerrit Code Review"
 NAME="gerrit"
 SCRIPTNAME=/etc/init.d/$NAME
+GERRIT_USER=gerrit
+GERRIT_WAR=/usr/share/gerrit/gerrit.war
 
 # Read configuration variable file if it is present
 [ -r /etc/default/$NAME ] && . /etc/default/$NAME

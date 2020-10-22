@@ -16,13 +16,6 @@ JAVA_ARGS=""
 GERRIT_DATADIR=/var/lib/gerrit
 GERRIT_SITE=${GERRIT_DATADIR}/review_site
 
-# Gerrit User details
-GERRIT_HOME=/home/gerrit
-GERRIT_USER=gerrit
-GERRIT_GROUP=gerrit
-GERRIT_FULLNAME="Gerrit Daemon User"
-
 # Location to the Gerrit war file
-GERRIT_WAR=/usr/share/gerrit/gerrit.war
 GERRIT_ARGS=""
 GERRIT_SH=${GERRIT_SITE}/bin/gerrit.sh
