@@ -5,6 +5,7 @@
 # Required-Stop:     $remote_fs
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
+# Short-Description: Gerrit code review
 # Description:       Web based code review and project management for Git based projects
 ### END INIT INFO
 
