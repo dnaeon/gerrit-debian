@@ -1,13 +1,15 @@
-This package was Debianised by Marin Atanasov Nikolov <dnaeon@gmail.com> on Wed Apr 18 10:55:30 EEST 2012
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: gerrit-debian
+Upstream-Contact: Marin Atanasov Nikolov <dnaeon@gmail.com>
+Source: https://github.com/dnaeon/gerrit-debian
 
-This package was downloaded from https://www.gerritcodereview.com/
+Files: *
+Copyright: 2012-2015, Marin Atanasov Nikolov <dnaeon@gmail.com>
+ 2020, Alice & Bob
+License: BSD
+ See /usr/share/common-licenses/BSD
 
-Upstream Author: ...
-
-Copyright ...
-
-License: Apache License 2.0
-
-The packaging is Copyright 2012 Marin Atanasov Nikolov <dnaeon@gmail.com> and is licenced
-under the terms of the BSD licence. On Debian systems the BSD licence can be
-found in /usr/share/common-licenses/BSD.
+Files: src/gerrit.war
+Copyright: 2011-2020, Google
+License: Apache-2.0
+ See /usr/share/common-licenses/Apache-2.0
