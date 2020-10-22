@@ -5,6 +5,7 @@ gerrit (3.2.3) UNRELEASED; urgency=medium
   * Rise dependency on java11
   * set debian/compat to 12
   * Update debian policy to 4.5.0: use "Rules-Requires-Root: no"
+  * Add gerrit-init program
 
  -- Nicolas Bourdaud <nicolas.bourdaud@gmail.com>  Tue, 20 Oct 2020 21:27:34 +0200
 
