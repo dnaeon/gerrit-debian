@@ -6,7 +6,7 @@
 # This is a POSIX shell fragment
 #
 
-JAVA_ARGS=""
+JAVA_ARGS="-Xmx1024m"
 
 # Gerrit data files location
 GERRIT_SITE=/var/lib/gerrit

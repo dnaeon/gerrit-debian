@@ -1,0 +1,16 @@
+[Unit]
+Description=Gerrit Code Review
+After=network.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/default/gerrit
+ExecStartPre=test -e $GERRIT_SITE/etc/gerrit.config
+ExecStart=java $JAVA_ARGS -jar /usr/share/gerrit/gerrit.war daemon -d $GERRIT_SITE
+User=gerrit
+SyslogIdentifier=GerritCodeReview
+StandardOutput=null
+StandardError=null
+
+[Install]
+WantedBy=multi-user.target
