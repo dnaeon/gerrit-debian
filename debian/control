@@ -2,6 +2,7 @@ Source: gerrit
 Section: contrib/misc
 Priority: optional
 Maintainer: Marin Atanasov Nikolov <dnaeon@gmail.com>
+Uploaders: Nicolas Bourdaud <nicolas.bourdaud@gmail.com>
 Build-Depends: debhelper (>= 12)
 Standards-Version: 4.5.0
 Rules-Requires-Root: no

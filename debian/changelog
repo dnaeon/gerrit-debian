@@ -1,4 +1,4 @@
-gerrit (3.2.3) UNRELEASED; urgency=medium
+gerrit (3.2.3) unstable; urgency=medium
 
   * Update Gerrit to version 3.2.3
   * use "3.0 (native)" package format
@@ -7,7 +7,7 @@ gerrit (3.2.3) UNRELEASED; urgency=medium
   * Update debian policy to 4.5.0: use "Rules-Requires-Root: no"
   * Add gerrit-init program
 
- -- Nicolas Bourdaud <nicolas.bourdaud@gmail.com>  Tue, 20 Oct 2020 21:27:34 +0200
+ -- Nicolas Bourdaud <nicolas.bourdaud@gmail.com>  Fri, 23 Oct 2020 18:24:37 +0200
 
 gerrit (2.11.3) unstable; urgency=low
 
