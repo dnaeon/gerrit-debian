@@ -1,3 +1,14 @@
+gerrit (3.2.3) unstable; urgency=medium
+
+  * Update Gerrit to version 3.2.3
+  * use "3.0 (native)" package format
+  * Rise dependency on java11
+  * set debian/compat to 12
+  * Update debian policy to 4.5.0: use "Rules-Requires-Root: no"
+  * Add gerrit-init program
+
+ -- Nicolas Bourdaud <nicolas.bourdaud@gmail.com>  Fri, 23 Oct 2020 18:24:37 +0200
+
 gerrit (2.11.3) unstable; urgency=low
 
   * Update Gerrit to version 2.11.3

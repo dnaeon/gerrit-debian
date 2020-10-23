@@ -1,0 +1,2 @@
+src/gerrit.war	/usr/share/gerrit
+gerrit-init	/usr/sbin

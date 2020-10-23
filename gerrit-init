@@ -1,0 +1,40 @@
+#!/bin/sh
+set -e
+
+USER=gerrit
+
+USAGE="$0 [-h]"
+
+while getopts h name
+do
+    case $name in
+    h)
+    	echo $USAGE
+        exit 0;;
+    ?)
+    	echo $USAGE
+        exit 2;;
+    esac
+done
+
+# Check no argument has been supplied
+if [ "$#" != "0" ]; then
+	echo $USAGE
+	exit 2
+fi
+
+# Load configuration
+. /etc/default/gerrit
+
+# Use specified folder if GERRIT_SITE was not set in /etc/default/gerrit
+GERRIT_SITE=${GERRIT_SITE-/var/lib/gerrit}
+
+# Installing gerrit to specified site
+echo "Installing gerrit in $GERRIT_SITE"
+mkdir $GERRIT_SITE
+chown -R $USER:root $GERRIT_SITE
+runuser -u $USER -- java $JAVA_ARGS -jar /usr/share/gerrit/gerrit.war $GERRIT_INIT_ARGS init --no-auto-start --site-path $GERRIT_SITE
+
+# Ensure that gerrit.war is provided to bin but as symlink
+rm -f $GERRIT_SITE/bin/gerrit.war
+ln -s /usr/share/gerrit/gerrit.war $GERRIT_SITE/bin/gerrit.war

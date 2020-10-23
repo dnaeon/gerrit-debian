@@ -6,23 +6,8 @@
 # This is a POSIX shell fragment
 #
 
-# Additional options that are passed to the Daemon.
-DAEMON_OPTS=""
-
-JAVA=/usr/bin/java
-JAVA_ARGS=""
+JAVA_ARGS="-Xmx1024m"
 
 # Gerrit data files location
-GERRIT_DATADIR=/var/lib/gerrit
-GERRIT_SITE=${GERRIT_DATADIR}/review_site
-
-# Gerrit User details
-GERRIT_HOME=/home/gerrit
-GERRIT_USER=gerrit
-GERRIT_GROUP=gerrit
-GERRIT_FULLNAME="Gerrit Daemon User"
-
-# Location to the Gerrit war file
-GERRIT_WAR=/usr/share/gerrit/gerrit.war
-GERRIT_ARGS=""
-GERRIT_SH=${GERRIT_SITE}/bin/gerrit.sh
+GERRIT_SITE=/var/lib/gerrit
+GERRIT_INIT_ARGS=""

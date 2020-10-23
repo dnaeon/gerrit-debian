@@ -5,6 +5,7 @@
 # Required-Stop:     $remote_fs
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
+# Short-Description: Gerrit code review
 # Description:       Web based code review and project management for Git based projects
 ### END INIT INFO
 
@@ -16,10 +17,14 @@ PATH=/sbin:/usr/sbin:/bin:/usr/bin
 DESC="Gerrit Code Review"
 NAME="gerrit"
 SCRIPTNAME=/etc/init.d/$NAME
+GERRIT_USER=gerrit
+GERRIT_GROUP=root
+GERRIT_WAR=/usr/share/gerrit/gerrit.war
 
 # Read configuration variable file if it is present
 [ -r /etc/default/$NAME ] && . /etc/default/$NAME
 
+GERRIT_SH=${GERRIT_SITE}/bin/gerrit.sh
 PIDFILE=${GERRIT_SITE}/logs/$NAME.pid
 
 SU=/bin/su
@@ -39,8 +44,8 @@ gerrit_initialize()
     /bin/echo -e "\nNo Gerrit site found. Will Initialize Gerrit first..."
 
     if [ ! -d "${GERRIT_SITE}" ]; then
-	install -d -o ${GERRIT_USER} -g ${GERRIT_GROUP} -m 0750 ${GERRIT_DATADIR}
-	${SU} -l ${GERRIT_USER} --shell=/bin/sh -c "${JAVA} ${JAVA_ARGS} -jar ${GERRIT_WAR} ${GERRIT_ARGS} init -d ${GERRIT_SITE}"
+	install -d -o ${GERRIT_USER} -g ${GERRIT_GROUP} -m 0750 ${GERRIT_SITE}
+	${SU} -l ${GERRIT_USER} --shell=/bin/sh -c "java ${JAVA_ARGS} -jar ${GERRIT_WAR} ${GERRIT_INIT_ARGS} init -d ${GERRIT_SITE}"
     fi
 }
 
